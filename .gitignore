@@ -3,3 +3,5 @@ out
 
 /*.pdf
 *.aux
+
+__latexindent_temp.tex
