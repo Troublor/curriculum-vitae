@@ -342,9 +342,9 @@
 
 % Define the 'scholarship' environment
 \newenvironment{scholarship}{%
-  \begin{tabular}{Y p{\rightcolumnlength}}
+  \begin{longtable}{Y p{\rightcolumnlength}}
 }{%
-  \end{tabular}
+  \end{longtable}
 }
 
 % Render a scholarshipentry in the scolarship environment
