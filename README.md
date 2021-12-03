@@ -18,3 +18,7 @@ The `cv.pdf` will be generated in `out` folder.
 make release
 ```
 This will update the `release/cv-latest.pdf` file.
+
+### Acknowledgement
+
+Template from [YAAC](https://github.com/darwiin/yaac-another-awesome-cv).
