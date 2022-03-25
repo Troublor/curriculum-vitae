@@ -166,7 +166,7 @@
 \setlength{\leftcolumn}{2.5cm}
 
 % Font Awesome icons aliases
-\newcommand{\mailSymbol}{\faAt}
+\newcommand{\mailSymbol}{\faEnvelope}
 \newcommand{\locationSymbol}{\faMapMarker}
 \newcommand{\infoSymbol}{\faInfo}
 \newcommand{\linkedinSymbol}{\faLinkedin}
@@ -194,7 +194,7 @@
 
 % Render a link with its symbol
 % Usage; \sociallink{<icon>}{<label>}
-\newcommand{\sociallink}[3]{\mbox{\textcolor{symbolcolor}{#1}\hspace{0.5em}\link{#2}{#3}\hspace{1em}}}
+\newcommand{\sociallink}[4][]{\mbox{\textcolor{symbolcolor}{#2} #1\hspace{0.4em}\link{#3}{#4}\hspace{1em}}}
 
 % Define author's name
 % Usage: \name{<firstname>}{<lastname>}
@@ -242,7 +242,7 @@
 
 % Render author's email (optional)
 % Usage: \email{<email adress>}
-\newcommand*{\email}[1]{\sociallink{\mailSymbol}{mailto:#1}{#1}}
+\newcommand*{\email}[2][]{\sociallink[#1]{\mailSymbol}{mailto:#2}{#2}}
 
 % Render a website link (optional)
 % Usage: \email{<email adress>}
