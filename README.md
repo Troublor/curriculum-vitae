@@ -1,6 +1,6 @@
 # Curriculum Vitae (CV) of Mine
 
-# If you are a visiter, [Click Here](./release/cv-latest.pdf) to check my CV
+# If you are a visiter, [Click Here](https://github.com/Troublor/curriculum-vitae/blob/gh-pages/cv.pdf) to check my CV
 
 ## For development
 
