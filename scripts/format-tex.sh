@@ -22,7 +22,6 @@ recurse() {
             "$LATEXINDENT" -s -l "$ROOT/.latexindent.yaml" -c "$OUT_DIR" -w $file
         fi
     fi
-    fi
  done
 }
 recurse

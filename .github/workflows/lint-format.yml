@@ -22,6 +22,7 @@ jobs:
           url: "https://github.com/cmhughes/latexindent.pl/releases/latest/download/latexindent-linux"
           target: latexindent
       - run: 'LATEXINDENT=./latexindent bash ./scripts/format-tex.sh'
+      - run: echo '<html><head><meta http-equiv="refresh" content="0; url=cv.pdf" /></head><body></body></html>' > index.html
       - name: Commit any changes due to lint and format
         # You may pin to the exact commit or the version.
         # uses: EndBug/add-and-commit@2bdc0a61a03738a1d1bda24d566ad0dbe3083d87
