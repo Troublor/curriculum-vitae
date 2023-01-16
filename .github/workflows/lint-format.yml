@@ -21,7 +21,7 @@ jobs:
         with:
           url: "https://github.com/cmhughes/latexindent.pl/releases/latest/download/latexindent-linux"
           target: deps/
-      - run: 'PATH=$PATH:./deps zsh ./scripts/format-tex.zsh'
+      - run: 'PATH=$PATH:./deps bash ./scripts/format-tex.sh'
       - name: Commit any changes due to lint and format
         # You may pin to the exact commit or the version.
         # uses: EndBug/add-and-commit@2bdc0a61a03738a1d1bda24d566ad0dbe3083d87
