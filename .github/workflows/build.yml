@@ -32,10 +32,12 @@ jobs:
           root_file: cv.tex
           # LaTeX engine to be used
           compiler: latexmk
+      
+      - uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: "out/index.html"
+          FILE_DATA: '<html><head><meta http-equiv="refresh" content="0; url=cv.pdf" /></head><body></body></html>'
           
-      - name: Create index.html
-        run: echo '<html><head><meta http-equiv="refresh" content="0; url=cv.pdf" /></head><body></body></html>' > out/index.html
-
       - name: GitHub Pages deploy
         # You may pin to the exact commit or the version.
         # uses: Cecilapp/GitHub-Pages-deploy@64837616f5938346d4be701112e6941195bfd54a
