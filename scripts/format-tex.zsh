@@ -1,8 +1,8 @@
-#! /usr/bin/env zsh
+#! /usr/bin/env bash
 
 # this scripts formats tex files
-
-DIR=${0:a:h}
+#
+DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ROOT="$DIR/.."
 
 OUT_DIR="$ROOT/.latexindent"
