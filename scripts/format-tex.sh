@@ -12,8 +12,17 @@ if [ -z "$LATEXINDENT" ]; then
     LATEXINDENT=latexindent
 fi
 
-setopt extendedglob
-for file in "$ROOT"/**/*.tex~"$ROOT"/template/**; do
-    echo "Formatting $file..."
-    "$LATEXINDENT" -s -l "$ROOT/.latexindent.yaml" -c "$OUT_DIR" -w $file
-done
+recurse() {
+ for i in "$1"/*;do
+    if [ -d "$i" ];then
+        recurse "$i"
+    elif [ -f "$i" ]; then
+        if [[ "$i" == *.tex ]]; then
+            echo "Formatting $i"
+            "$LATEXINDENT" -s -l "$ROOT/.latexindent.yaml" -c "$OUT_DIR" -w $file
+        fi
+    fi
+    fi
+ done
+}
+recurse
