@@ -1,0 +1,21 @@
+version: 3
+
+tasks:
+  build:
+    preconditions:
+      - command -v latexmk
+    cmds:
+      - latexmk
+
+  format:
+    sources:
+      - ./**/*.tex
+    preconditions:
+      - command -v zsh
+      - command -v latexindent
+    cmds:
+      - zsh ./scripts/format-tex.zsh
+
+  clean:
+    cmds:
+      - rm -rf out

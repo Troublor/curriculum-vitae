@@ -6,4 +6,8 @@ out
 
 __latexindent_temp.tex
 
+/deps/
+/.task/
+
 .DS_Store
+/.latexindent

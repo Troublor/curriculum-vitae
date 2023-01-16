@@ -1,0 +1,13 @@
+defaultIndent: "\t"
+removeTrailingWhitespace: 1
+modifyLineBreaks:
+  preserveBlankLines: 1
+  ondenseMultipleBlankLinesInto: 1
+textWrapOptions:
+  column: 0
+  multipleSpaceToSingle: 1
+oneSentencePerLine:
+  manipulateSentences: 0
+  removeSentenceLineBreaks: 1
+  multipleSpacesToSingle: 1
+onlyOneBackUp: 1
