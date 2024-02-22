@@ -1,0 +1,287 @@
+% USA STEM CV LaTeX Template
+%
+% Template Author:
+% Sabrina Benge
+%
+% Author:
+% Wuqi Aaron Zhang
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{documentMETADATA}
+
+\usepackage{fontawesome}
+
+\name{Wuqi}{Zhang}
+\tagline{(William Aaron Cheung) \\Ph.D. in Computer Science and Engineering}
+
+\socialinfo{
+
+	\smartphone{+(1) 765-409-7834}
+	\email{career@troublor.xyz}
+
+\personalLink{troublor.xyz}
+	\github{Troublor}
+}
+
+\begin{document}
+
+\makecvheader
+
+\makecvfooter
+{\textsc{}} %\selectlanguage{english}\today
+{\textsc{Wuqi Zhang - CV}}
+{\thepage}
+
+\par{
+}
+
+\sectionTitle{Strength Highlights}{\faTasks}
+
+\begin{keywords}
+	\keywordsentry{Degree}{Ph.D. in Computer Science and Engineering}
+	\keywordsentry{Programming}{Proficient in Rust, Golang, TypeScript/JavaScript, Python, Java, Solidity, Haskell}
+	\keywordsentry{Research}{Program analysis, Software testing, Blockchain, Smart contracts, Decentralized applications}
+	\keywordsentry{Area of Expertise}{Web3 development and security, Web development, Backend development, Program analysis development}
+\end{keywords}
+
+\sectionTitle{Academic}{\faMortarBoard}
+
+\begin{scholarship}
+	\scholarshipentry{2019 - 2024}
+	{\textbf{Ph.D. in Computer Science and Engineering}}
+	\scholarshipentry{}{CGA: 3.933/4.3}
+	\scholarshipentry{}{The Hong Kong University of Science and Technology, Hong Kong.}
+
+	\scholarshipentry{2015 - 2019}
+	{\textbf{B.Eng. in Computer Science and Technology}}
+	\scholarshipentry{}{GPA: 4.2149/5 (Rank: 1/250), Outstanding Graduates}
+	\scholarshipentry{}{Northeastern University, China}
+
+\end{scholarship}
+
+\sectionTitle{Engineering Skills}{\faWrench}
+
+\begin{keywords}
+	\keywordsentry{Fan of Programming}{
+		I am enthusiastic about programming and coding.
+		Many of my daily-use tools are developed by myself, including a shell environment manager (to manage my shell on many different machines and servers), a fully hand-crafted personal website (using TypeScript and React), a server event notifier telegram bot (to notify me when events happen on servers), self-configured NeoVim development environment, etc.
+	}
+	\keywordsentry{Full Stack Engineer}{
+		I am capable of full-stack application development including frontend development (using Typescript and React) and backend development (using Node.js with NestJS, Python with Django or Tornado, Golang, and Rust).
+	}
+	\keywordsentry{Functional Programming}{
+		I am an enthusiast of functional programming and devoted to adopting the functional programming paradigm in my daily work.
+		I am proficient in Haskell and Rust, and many of my research projects are implemented in Haskell and Rust.
+	}
+	\keywordsentry{Blockchain and Web3}{
+		I am an expert in blockchain and Web3 development, which is also my PhD research focus.
+		I am proficient in smart contracts and decentralized application development.
+		I am familiar with the implement of Ethereum protocol, especially the execution layer (i.e., go-ethereum and reth).
+	}
+\end{keywords}
+
+\sectionTitle{Work Experience}{\faSuitcase}
+
+\begin{experiences}
+	\experience
+	{Scholar}   {Purdue University}{Indiana}{United States}
+	{2023-2024} {
+		I work as a research scholar in the Department of Computer Science at Purdue University focusing on security analysis and tool development for blockchain smart contracts.
+		\begin{itemize}
+			\item February 2023 - December 2024
+		\end{itemize}
+	}
+	{Research, Program Analysis, Smart Contract, Blockchain, Security}
+	\emptySeparator
+	\experience
+	{Intern}   {Hong Kong Applied Science and Technology Research Institute (ASTRI)}{Hong Kong}{China}
+	{2020-2021} {
+		This is a joint project between ASTRI and Crypto-FinTech Lab of HKUST to develop the next-generation distributed file system based on blockchain and distributed computing technologies.
+		My responsibility is to develop the distributed file system protocol as Ethereum smart contracts.
+		\begin{itemize}
+			\item October 2020 - June 2021
+		\end{itemize}
+	}
+	{Blockchain, FinTech, Smart Contracts}
+	\emptySeparator
+	\experience
+	{Developer} {Shenyang Wuzhi Technology Co., Ltd.}{Liaoning}{China}
+	{2018-2019}    {
+		My job was to develop the back-end server of the mobile application that automatically translates sign language to Chinese.
+		\begin{itemize}
+			\item October 2018 - January 2019
+		\end{itemize}
+	}
+	{RESTful Service, Sever-side Development}
+	\emptySeparator
+	\experience
+	{Developer} {Publicity Department of Northeastern University}{Liaoning}{China}
+	{2015-2019}    {
+		I served as the technical leader in the student association to continuously maintain various University websites.
+		\begin{itemize}
+			\item October 2015 - June 2019
+		\end{itemize}
+	}
+	{Web Development, RESTful Service}
+\end{experiences}
+
+\sectionTitle{Selected Projects}{\faLaptop}
+
+\begin{projects}
+	\project
+	{LibSOFL}{2023-Present}
+	{LibSOFL is a transaction runtime analysis library for EVM-compatible blockchain. It provides convenient APIs to quickly replay historical transactions and analyze the execution trace. The library is the basis of my research work in blockchain security analysis.}
+	{\textit{To be open-sourced in 2024.}}
+	{Rust, Ethereum, Web3, Blockchain, Security, Analysis}
+
+	\project
+	{Nyx}{2023}
+	{Nyx is a Solidity static analyzer aiming to detect front-running vulnerabilities in smart contracts. It is the deliverable of my research work in blockchain security analysis.}
+	{\textit{To be open-sourced in May, 2024.}}
+	{Rust, Ethereum, Web3, Blockchain, Security, Analysis}
+
+
+	\project
+	{Slither}{2023}
+	{\github{https://github.com/crytic/slither}}
+	{Slither is a static analysis framework for Solidity smart contracts. I am a contributor to Slither in terms of control flow graph (CFG) and SlithIR construction.}
+	{Python, Solidity}
+
+	\project
+	{Redgiant}{2021 - 2022}
+	{\github{https://github.com/Troublor/erebus-redgiant}}
+	{Project Redgiant is a runtime analysis framework for EVM bytecode. It is capable of doing customized trace analysis or data flow analysis in the execution of Ethereum transactions. I build it as a research tool to develop techniques to automatically identify front-running attacks on the blockchain and build vulnerability benchmarks.}
+	{Go, Ethereum}
+
+	\project
+	{ĐArcher}{2020 - 2021}
+	{\github{https://github.com/Troublor/darcher}}
+	{ĐArcher is a framework for testing Ethereum-based decentralized applications (DApps). As a research project, I identify a new type of bug in DApps, called on-chain-off-chain synchronization bugs, and propose ĐArcher to automatically detect them in DApps.}
+	{TypeScript, Java, Go, Solidity, Ethereum}
+
+	\project
+	{ulauncher-numconverter}{2021}
+	{\github{https://github.com/Troublor/ulauncher-numconverter}\website{https://ext.ulauncher.io/-/github-troublor-ulauncher-numconverter}{Number Converter - Ulauncher Extensions}}
+	{ulauncher-numconverter is a Ulauncher extension that converts numbers between different bases.}
+	{Python, Ulauncher}
+
+
+	\project
+	{My Hand-Made Personal Website}{2019 - Present}
+	{\github{https://github.com/Troublor/troublor.github.io}\website{https://troublor.xyz}{troublor.xyz}}
+	{I build my personal website by hand using React and TypeScript, instead of filling static templates like Hugo and Gatsby framework.}
+	{React, Typescript, CSS, HTML}
+
+\end{projects}
+
+\sectionTitle{Security Findings and Achievement}{\faBug}
+
+\begin{keywords}
+	\keywordsentry{Zero-Day Vulnerabilities}{
+		Five zero-day vulnerabilities found in Ethereum smart contracts.
+	}
+	\keywordsentry{CTF Competition}{
+		Tied 3rd place in the 2024 zkCTF competition. \\
+		& 12th place in the 2023 blazCTF competition.
+	}
+\end{keywords}
+
+\sectionTitle{Research Publications}{\faFlask}
+
+\begin{scholarship}
+	\scholarshipentry{2024}
+	{\textbf{Nyx: Detecting Exploitable Front-Running Vulnerabilities in Smart Contracts}}
+	\scholarshipentry{Conference}
+	{Wuqi Zhang, Zhuo Zhang, Qingkai Shi, Lu Liu, Lili Wei, Yepang Liu, Xiangyu Zhang, Shing-Chi Cheung}
+	\scholarshipentry{}
+	{The 45th IEEE Symposium on Security and Privacy (IEEE S\&P 2024)}
+
+	\scholarshipentry{2023}
+	{\textbf{WFDefProxy: Real World Implementation and Evaluation of Website Fingerprinting Defenses}}
+	\scholarshipentry{Journal}
+	{Jiajun Gong, Wuqi Zhang, Charles Zhang, Tao Wang}
+	\scholarshipentry{}
+	{IEEE Transactions on Information Forensics and Security (TIFS)}
+
+	\scholarshipentry{2023}
+	{\textbf{Combatting Front-Running in Smart Contracts: Attack Mining, Benchmark Construction and Vulnerability Detector Evaluation}}
+	\scholarshipentry{Journal}
+	{Wuqi Zhang, Lili Wei, Shing-Chi Cheung, Yepang Liu, Shuqing Li, Lu Liu, Michael R. Lyu}
+	\scholarshipentry{}
+	{Transactions on Software Engineering (TSE)}
+
+	\scholarshipentry{2023}
+	{\textbf{Finding Deviated Behaviors of the Compressed DNN Models for Image Classifications}}
+	\scholarshipentry{Journal}
+	{Yongqiang Tian, Wuqi Zhang, Ming Wen, Shing-Chi Cheung, Chengnian Sun, Shiqing Ma, Yu Jiang}
+	\scholarshipentry{}
+	{ACM Transactions on Software Engineering and Methodology (TOSEM)}
+
+	\scholarshipentry{2022}
+	{\textbf{Surakav: Generating Realistic Traces for a Strong Website Fingerprinting Defense}}
+	\scholarshipentry{Conference}
+	{Jiajun Gong, Wuqi Zhang, Charles Zhang, Tao Wang}
+	\scholarshipentry{}
+	{The 43rd IEEE Symposium on Security and Privacy (IEEE S\&P 2022)}
+
+	\scholarshipentry{2021}
+	{\textbf{ÐArcher: Detecting On-Chain-Off-Chain Synchronization Bugs In Decentralized Applications}}
+	\scholarshipentry{Conference}
+	{Wuqi Zhang, Lili Wei, Shuqing Li, Yepang Liu, Shing-Chi Cheung}
+	\scholarshipentry{}
+	{The 29th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2021)}
+
+	\scholarshipentry{2021}
+	{\textbf{Characterizing Transaction-Reverting Statements in Ethereum Smart Contracts}}
+	\scholarshipentry{Conference}
+	{Lu Liu, Lili Wei, Wuqi Zhang, Ming Wen, Yepang Liu, Shing-Chi Cheung}
+	\scholarshipentry{}
+	{The 34th IEEE/ACM International Conference on Automated Software Engineering (ASE 2021)}
+
+\end{scholarship}
+
+\sectionTitle{Awards}{\faTrophy}
+
+\begin{scholarship}
+	\scholarshipentry{2023}
+	{\textbf{Overseas Research Award}}
+	\scholarshipentry{}{The Hong Kong University of Science and Technology}
+
+	\scholarshipentry{2022, 2023}
+	{\textbf{Research Travel Grant}}
+	\scholarshipentry{}{The Hong Kong University of Science and Technology}
+
+	\scholarshipentry{2022, 2023}
+	{\textbf{HKUST RedBird Academic Excellence Award}}
+	\scholarshipentry{}{The Hong Kong University of Science and Technology}
+
+	\scholarshipentry{2019 - 2023}
+	{\textbf{Postgraduate Studentship}}
+	\scholarshipentry{}{The Hong Kong University of Science and Technology}
+
+	\scholarshipentry{2019}
+	{\textbf{Outstanding Graduates of Liaoning Province}}
+	\scholarshipentry{}
+	{Department of Education of Liaoning, China}
+
+	\scholarshipentry{2016, 2017}
+	{\textbf{National Scholarship}}
+	\scholarshipentry{}
+	{Ministry of Education of the People's Republic of China}
+
+	\scholarshipentry{2016, 2017}
+	{\textbf{First-class University Scholarship}}
+	\scholarshipentry{}
+	{Northeastern University, China}
+
+	\scholarshipentry{2016, 2017}
+	{\textbf{Pacemaker to Excellent Student Award}}
+	\scholarshipentry{}
+	{Northeastern University, China}
+
+\end{scholarship}
+
+
+\end{document}
